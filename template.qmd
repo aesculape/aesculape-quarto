@@ -6,7 +6,7 @@ author: DrJohan
 date: last-modified
 ---
 
-##
+## 
 
 ![Diagram of penguin head with indication of bill length and bill depth.](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png)
 
@@ -21,8 +21,7 @@ library(bslib) # need to install
 
 ## Literate Programming
 
-Per [Donald Knuth](https://en.wikipedia.org/wiki/Literate_programming
-) 
+Per [Donald Knuth](https://en.wikipedia.org/wiki/Literate_programming)
 
 > A programming paradigm introduced by Donald Knuth in which a computer program is given an explanation of its logic in a natural language, such as English, interspersed with snippets of macros and traditional source code, from which compilable source code can be generated.
 
@@ -53,7 +52,7 @@ penguins_clean <- penguins %>%
 
 Let's move on to some plots, for the overall distributions and for just the Adelie penguins. The overall distribution of the data by species shows some overlap in body weight for Adelie/Chinstrap, but more of a separation for the Gentoo penguins.
 
-## Distribution 
+## Distribution
 
 ```{r, fig.retina=1, fig.dim=c(8,4)}
 penguins %>% 
@@ -80,7 +79,7 @@ penguin_size_plot
 
 Moving on to some basic modeling we can see if what kind of relationships we observe in the data. Note that I'm really not following any plan, just indicating how you can fit some different models all at once with `dplyr` + `broom`.
 
-##
+## 
 
 ```{r}
 model_inputs <- tibble(
@@ -99,7 +98,7 @@ model_metrics <- model_inputs %>%
   summarise(broom::glance(lm), .groups = "drop")
 ```
 
-##
+## 
 
 ```{r}
 model_metrics %>% 
