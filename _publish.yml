@@ -1,0 +1,4 @@
+- source: template.qmd
+  quarto-pub:
+    - id: 03f65f74-f79f-4c26-9395-b6be699ca5cd
+      url: 'https://drjohan.quarto.pub/aesculapetemplate'

@@ -9,7 +9,7 @@ contributes:
       logo: logo.png
       footer: |
         [Aesculape CRO](https://aesculape.com/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html).
-        Code available on [GitHub](https://github.com/DrJohan/aesculape-quarto)
+        Code available on [GitHub](https://github.com/DrJohan/aesculape-quarto.git)
       slide-number: c/t
       show-slide-number: all
       title-slide-attributes:

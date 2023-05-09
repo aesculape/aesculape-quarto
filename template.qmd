@@ -4,6 +4,8 @@ format:
   aesculape-quarto-revealjs: default
 author: DrJohan
 date: last-modified
+chalkboard: 
+  theme: whiteboard
 ---
 
 ## 
