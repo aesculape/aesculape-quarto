@@ -1,7 +1,8 @@
 ---
 title: Aesculape Template
 format:
-  aesculape-quarto-revealjs: default
+  aesculape-quarto-revealjs: 
+    footer: Aesculape Template
 author: DrJohan
 date: today
 date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
@@ -13,7 +14,9 @@ chalkboard:
 
 ![Diagram of penguin head with indication of bill length and bill depth.](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png)
 
-```{r setup, include=FALSE}
+```{r include=FALSE}
+#| label: setup
+
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(palmerpenguins) # need to install
@@ -31,6 +34,8 @@ Per [Donald Knuth](https://en.wikipedia.org/wiki/Literate_programming)
 ## Specific statistics
 
 ```{r}
+#| label: basic-stats
+ 
 penguins %>% 
   group_by(species, sex) %>% 
   summarize(
@@ -46,6 +51,8 @@ penguins %>%
 If you noticed [above]{.yellow}, there was some NA or missing data. We can remove those rows for now.
 
 ```{r}
+#| label: data-cleaning
+
 penguins_clean <- penguins %>% 
   na.omit() %>% 
   mutate(species_num = as.numeric(species))
@@ -117,3 +124,7 @@ model_metrics %>%
 ## Our CEO
 
 ![](JP.png){.figure}
+
+::: footer
+Dr Jean Paul Deslypere
+:::
