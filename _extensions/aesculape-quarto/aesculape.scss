@@ -1,4 +1,8 @@
 /*-- scss:defaults --*/
+$theme-darkblue: #01364C;
+$theme-blue: #99D9DD;
+$theme-white: #F7F8F9;
+$theme-yellow: #F4BA02;
 // importing fonts
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Yanone+Kaffeesatz&display=swap');
 
@@ -85,4 +89,23 @@ section.has-dark-background a, section.has-dark-background a:hover {
   right: 10px !important;
   top: unset !important;
   color: $body-color !important;
+}
+
+.blue {
+  color: $theme-blue;
+  font-weight: bold;
+}
+
+.yellow {
+  color: $theme-yellow;
+  font-weight: bold;
+}
+
+.figure{
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    overflow:hidden;
+    background-size: cover;
+    background-position: -25px -20px;
 }

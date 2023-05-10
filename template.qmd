@@ -1,9 +1,10 @@
 ---
-title: Untitled
+title: Aesculape Template
 format:
   aesculape-quarto-revealjs: default
 author: DrJohan
-date: last-modified
+date: today
+date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
 chalkboard: 
   theme: whiteboard
 ---
@@ -42,7 +43,7 @@ penguins %>%
 
 ## Cleanup the data
 
-If you noticed above, there was some NA or missing data. We can remove those rows for now.
+If you noticed [above]{.yellow}, there was some NA or missing data. We can remove those rows for now.
 
 ```{r}
 penguins_clean <- penguins %>% 
@@ -113,3 +114,6 @@ model_metrics %>%
     model_form ~ px(150)
   )
 ```
+## Our CEO
+
+![](JP.png){.figure}
